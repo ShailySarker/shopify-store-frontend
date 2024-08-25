@@ -7,8 +7,8 @@ import TotalSalesData from "./Components/TotalSalesData";
 
 const Home = () => {
     return (
-        <div className="container mx-auto py-4 lg:px-20">
-            <h1 className="text-3xl font-bold mb-4">Sales Dashboard</h1>
+        <div className="container mx-auto py-4 lg:px-20 md:px-12 px-6 bg-slate-100">
+            <h1 className="lg:text-3xl md:text-2xl text-xl font-bold mb-4">Sales Dashboard</h1>
             <TotalSalesData />
             <SalesGrowthRateChart />
             <NewCustomersChart />

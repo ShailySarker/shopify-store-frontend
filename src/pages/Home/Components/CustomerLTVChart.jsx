@@ -14,8 +14,8 @@ const CustomerLTVChart = () => {
     }, []);
 
     return (
-        <div className="mb-10 p-4 bg-white shadow rounded">
-            <h2 className="text-xl font-semibold mb-2 text-center">Customer LTV Chart</h2>
+        <div className="lg:mb-10 md:mb-7 mb-5 lg:p-4 md:p-3 p-[10px] bg-white shadow rounded">
+            <h2 className="lg:text-xl md:text-lg text-base font-semibold mb-2 text-center">Customer LTV Chart</h2>
             <ResponsiveContainer width="100%" height={400}>
                 <LineChart data={ltvData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
