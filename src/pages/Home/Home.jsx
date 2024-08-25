@@ -1,4 +1,5 @@
 import CustomerGeographyChart from "./Components/CustomerGeographyChart";
+import CustomerLTVChart from "./Components/CustomerLTVChart";
 import NewCustomersChart from "./Components/NewCustomersChart";
 import RepeatCustomersChart from "./Components/RepeatCustomersChart";
 import SalesGrowthRateChart from "./Components/SalesGrowthRateChart";
@@ -13,6 +14,7 @@ const Home = () => {
             <NewCustomersChart />
             <RepeatCustomersChart />
             <CustomerGeographyChart />
+            <CustomerLTVChart />
         </div>
     );
 };

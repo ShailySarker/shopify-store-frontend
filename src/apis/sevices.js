@@ -72,13 +72,13 @@ export const fetchCustomerGeography = async () => {
 };
 
 // fetch Customer LTV
-// export const fetchCustomerLTV = async () => {
-//     try {
-//         const response = await axios.get(`${API_BASE_URL}/customers/ltv-cohorts`);
-//         console.log("response API_6:", response?.data)
-//         return response?.data;
-//     } catch (error) {
-//         console.error("Error fetching sales grow rate:", error);
-//         return [];
-//     }
-// };
+export const fetchCustomerLTV = async () => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/customers/ltv-cohorts`);
+        console.log("response API_6:", response?.data)
+        return response?.data;
+    } catch (error) {
+        console.error("Error fetching Customer LTV:", error);
+        return [];
+    }
+};
