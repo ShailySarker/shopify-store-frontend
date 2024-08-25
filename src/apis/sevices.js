@@ -44,12 +44,20 @@ export const fetchNewCustomers = async (interval) => {
     }
 };
 
-// export const fetchRepeatCustomers = async (interval) => {
-//     const response = await axios.get(`${API_BASE_URL}/customers/repeat-customers`, {
-//         params: { interval },
-//     });
-//     return response?.data;
-// };
+// fetch Repeat Customers
+export const fetchRepeatCustomers = async (interval) => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/customers/repeat-customers`, {
+            params: { interval },
+        });
+        console.log("response API_4:", response?.data)
+        return response?.data;
+    } catch (error) {
+        console.error("Error fetching sales grow rate:", error);
+        return [];
+    }
+    
+};
 
 // export const fetchCustomerGeography = async () => {
 //     const response = await axios.get(`${API_BASE_URL}/customers/geography`);
