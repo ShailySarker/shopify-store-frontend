@@ -53,18 +53,32 @@ export const fetchRepeatCustomers = async (interval) => {
         console.log("response API_4:", response?.data)
         return response?.data;
     } catch (error) {
-        console.error("Error fetching sales grow rate:", error);
+        console.error("Error fetching Repeat Customers rate:", error);
         return [];
     }
-    
+
 };
 
-// export const fetchCustomerGeography = async () => {
-//     const response = await axios.get(`${API_BASE_URL}/customers/geography`);
-//     return response?.data;
-// };
+// fetch Customer Geography
+export const fetchCustomerGeography = async () => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/customers/geography`);
+        console.log("response API_5:", response?.data)
+        return response?.data;
+    } catch (error) {
+        console.error("Error fetching customer geography:", error);
+        return [];
+    }
+};
 
+// fetch Customer LTV
 // export const fetchCustomerLTV = async () => {
-//     const response = await axios.get(`${API_BASE_URL}/customers/ltv-cohorts`);
-//     return response?.data;
+//     try {
+//         const response = await axios.get(`${API_BASE_URL}/customers/ltv-cohorts`);
+//         console.log("response API_6:", response?.data)
+//         return response?.data;
+//     } catch (error) {
+//         console.error("Error fetching sales grow rate:", error);
+//         return [];
+//     }
 // };
