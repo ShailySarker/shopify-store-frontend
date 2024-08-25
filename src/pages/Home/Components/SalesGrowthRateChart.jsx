@@ -14,7 +14,7 @@ const SalesGrowthRateChart = () => {
     }, []);
 
     return (
-        <div className="mb-6 p-4 bg-white shadow rounded">
+        <div className="mb-10 p-4 bg-white shadow rounded">
             <h2 className="text-xl font-semibold mb-2 text-center">Sales Growth Rate Chart</h2>
             <ResponsiveContainer width="100%" height={400}>
                 <LineChart data={growthRateData}>

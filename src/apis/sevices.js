@@ -28,15 +28,21 @@ export const fetchSalesGrowthRate = async (interval) => {
         console.error("Error fetching sales grow rate:", error);
         return [];
     }
-    ;
 };
 
-// export const fetchNewCustomers = async (interval) => {
-//     const response = await axios.get(`${API_BASE_URL}/customers/new-customers`, {
-//         params: { interval },
-//     });
-//     return response?.data;
-// };
+// fetch New Customers
+export const fetchNewCustomers = async (interval) => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/customers/new-customers`, {
+            params: { interval },
+        });
+        console.log("response API_3:", response?.data)
+        return response?.data;
+    } catch (error) {
+        console.error("Error fetching New Customers:", error);
+        return [];
+    }
+};
 
 // export const fetchRepeatCustomers = async (interval) => {
 //     const response = await axios.get(`${API_BASE_URL}/customers/repeat-customers`, {
