@@ -23,6 +23,7 @@ const CustomerGeographyChart = () => {
                     <Tooltip />
                     <Legend />
                     <Bar dataKey="customerCount" fill="#8884d8" />
+                    {/* fill='#ccfbf1' stroke=" #0d9488" */}
                 </BarChart>
             </ResponsiveContainer>
         </div>

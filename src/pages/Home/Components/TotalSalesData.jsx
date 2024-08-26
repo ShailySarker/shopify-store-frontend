@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchTotalSales } from '../../../apis/sevices';
-import { LineChart, CartesianGrid, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis, Area, AreaChart } from 'recharts';
+import { CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis, Area, AreaChart } from 'recharts';
 
 const TotalSalesData = () => {
     const [totalSalesData, setTotalSalesData] = useState([]);
@@ -14,7 +14,8 @@ const TotalSalesData = () => {
     }, []);
 
     const formattedData = totalSalesData?.map(sale => ({
-        date: sale?._id,         totalSales: sale?.totalSales,
+        date: sale?._id,
+        totalSales: sale?.totalSales,
     }));
 
     return (
