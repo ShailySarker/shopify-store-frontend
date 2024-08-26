@@ -30,15 +30,15 @@ const SalesGrowthRateChart = () => {
                         left: 0,
                         bottom: 0,
                     }}>
-                    <CartesianGrid strokeDasharray="3 3" />
+                    {/* <CartesianGrid strokeDasharray="3 3" /> */}
                     <XAxis dataKey="date" angle={-35} textAnchor="end" />
                     <YAxis 
                         domain={['auto', 'auto']}
                         tickFormatter={(value) => `${value}%`} 
                     />
                     <Tooltip formatter={(value) => `${value}%`} />
-                    <Legend wrapperStyle={{ paddingTop: '45px', fontWeight: 600 }} />
-                    <Line type="monotone" dataKey="growthRate" stroke="#82ca9d" activeDot={{ r: 6 }} />
+                    <Legend wrapperStyle={{ paddingTop: '45px', fontWeight: 600}} />
+                    <Line type="monotone" dataKey="growthRate" stroke="#16a34a" strokeWidth={1.8} activeDot={{ r: 6 }} />
                 </LineChart>
             </ResponsiveContainer>
         </div>

@@ -11,8 +11,8 @@ const Home = () => {
             <h1 className="lg:text-3xl md:text-2xl text-xl font-semibold mb-4">Sales Dashboard</h1>
             <TotalSalesData />
             <SalesGrowthRateChart />
-            {/* <NewCustomersChart />
-            <RepeatCustomersChart />
+            <NewCustomersChart />
+            {/* <RepeatCustomersChart />
             <CustomerGeographyChart />
             <CustomerLTVChart /> */}
         </div>

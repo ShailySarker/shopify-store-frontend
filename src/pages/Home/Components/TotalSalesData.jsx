@@ -14,8 +14,7 @@ const TotalSalesData = () => {
     }, []);
 
     const formattedData = totalSalesData?.map(sale => ({
-        date: sale?._id, // Assuming sale._id contains the date
-        totalSales: sale?.totalSales,
+        date: sale?._id,         totalSales: sale?.totalSales,
     }));
 
     return (
