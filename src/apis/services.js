@@ -63,7 +63,7 @@ export const fetchRepeatCustomers = async (interval) => {
 export const fetchCustomerGeography = async () => {
     try {
         const response = await axios.get(`${API_BASE_URL}/customers/geography`);
-        console.log("response API_5:", response?.data?.data)
+        // console.log("response API_5:", response?.data?.data)
         return response?.data?.data;
     } catch (error) {
         console.error("Error fetching customer geography:", error);
@@ -75,8 +75,8 @@ export const fetchCustomerGeography = async () => {
 export const fetchCustomerLTV = async () => {
     try {
         const response = await axios.get(`${API_BASE_URL}/customers/ltv-cohorts`);
-        // console.log("response API_6:", response?.data)
-        return response?.data;
+        console.log("response API_6:", response?.data?.data)
+        return response?.data?.data;
     } catch (error) {
         console.error("Error fetching Customer LTV:", error);
         return [];

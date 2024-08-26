@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, Rectangle } from 'recharts';
-import { fetchCustomerGeography } from '../../../apis/sevices';
+import { fetchCustomerGeography } from '../../../apis/services';
 
 const CustomerGeographyChart = () => {
     const [geographyData, setGeographyData] = useState([]);

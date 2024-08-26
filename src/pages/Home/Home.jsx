@@ -14,7 +14,7 @@ const Home = () => {
             <NewCustomersChart />
             <RepeatCustomersChart />
             <CustomerGeographyChart />
-            {/* <CustomerLTVChart /> */}
+            <CustomerLTVChart />
         </div>
     );
 };

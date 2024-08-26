@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Tooltip, Legend, ResponsiveContainer, XAxis, YAxis, CartesianGrid, AreaChart, Area } from 'recharts';
-import { fetchRepeatCustomers } from '../../../apis/sevices';
+import { fetchRepeatCustomers } from '../../../apis/services';
 
 const RepeatCustomersChart = () => {
     const [repeatCustomersData, setRepeatCustomers] = useState([]);

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Rectangle } from 'recharts';
-import { fetchNewCustomers } from '../../../apis/sevices';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, Rectangle } from 'recharts';
+import { fetchNewCustomers } from '../../../apis/services';
 
 const NewCustomersChart = () => {
     const [newCustomersData, setNewCustomersData] = useState([]);

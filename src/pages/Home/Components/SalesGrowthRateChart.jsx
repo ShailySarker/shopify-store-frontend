@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { fetchSalesGrowthRate } from '../../../apis/sevices';
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { fetchSalesGrowthRate } from '../../../apis/services';
 
 const SalesGrowthRateChart = () => {
     const [growthRateData, setGrowthRateData] = useState([]);
@@ -32,12 +32,12 @@ const SalesGrowthRateChart = () => {
                     }}>
                     {/* <CartesianGrid strokeDasharray="3 3" /> */}
                     <XAxis dataKey="date" angle={-35} textAnchor="end" />
-                    <YAxis 
+                    <YAxis
                         domain={['auto', 'auto']}
-                        tickFormatter={(value) => `${value}%`} 
+                        tickFormatter={(value) => `${value}%`}
                     />
                     <Tooltip formatter={(value) => `${value}%`} />
-                    <Legend wrapperStyle={{ paddingTop: '45px', fontWeight: 600}} />
+                    <Legend wrapperStyle={{ paddingTop: '45px', fontWeight: 600 }} />
                     <Line type="monotone" dataKey="growthRate" stroke="#16a34a" strokeWidth={1.8} activeDot={{ r: 6 }} />
                 </LineChart>
             </ResponsiveContainer>
