@@ -13,8 +13,8 @@ const Home = () => {
             <SalesGrowthRateChart />
             <NewCustomersChart />
             <RepeatCustomersChart />
-            {/* <CustomerGeographyChart />
-            <CustomerLTVChart /> */}
+            <CustomerGeographyChart />
+            {/* <CustomerLTVChart /> */}
         </div>
     );
 };
