@@ -8,7 +8,7 @@ export const fetchTotalSales = async (interval) => {
         const response = await axios.get(`${API_BASE_URL}/sales/total-sales`, {
             params: { interval },
         });
-        console.log("response API_1:", response?.data)
+        console.log("response API_1:", response?.data);
         return response?.data;
     } catch (error) {
         console.error("Error fetching total sales data:", error);
@@ -22,7 +22,7 @@ export const fetchSalesGrowthRate = async (interval) => {
         const response = await axios.get(`${API_BASE_URL}/sales/sales-growth-rate`, {
             params: { interval },
         });
-        console.log("response API_2:", response?.data)
+        // console.log("response API_2:", response?.data)
         return response?.data;
     } catch (error) {
         console.error("Error fetching sales grow rate:", error);
@@ -36,7 +36,7 @@ export const fetchNewCustomers = async (interval) => {
         const response = await axios.get(`${API_BASE_URL}/customers/new-customers`, {
             params: { interval },
         });
-        console.log("response API_3:", response?.data)
+        // console.log("response API_3:", response?.data)
         return response?.data;
     } catch (error) {
         console.error("Error fetching New Customers:", error);
@@ -50,7 +50,7 @@ export const fetchRepeatCustomers = async (interval) => {
         const response = await axios.get(`${API_BASE_URL}/customers/repeat-customers`, {
             params: { interval },
         });
-        console.log("response API_4:", response?.data)
+        // console.log("response API_4:", response?.data)
         return response?.data;
     } catch (error) {
         console.error("Error fetching Repeat Customers rate:", error);
@@ -63,7 +63,7 @@ export const fetchRepeatCustomers = async (interval) => {
 export const fetchCustomerGeography = async () => {
     try {
         const response = await axios.get(`${API_BASE_URL}/customers/geography`);
-        console.log("response API_5:", response?.data)
+        // console.log("response API_5:", response?.data)
         return response?.data;
     } catch (error) {
         console.error("Error fetching customer geography:", error);
@@ -75,7 +75,7 @@ export const fetchCustomerGeography = async () => {
 export const fetchCustomerLTV = async () => {
     try {
         const response = await axios.get(`${API_BASE_URL}/customers/ltv-cohorts`);
-        console.log("response API_6:", response?.data)
+        // console.log("response API_6:", response?.data)
         return response?.data;
     } catch (error) {
         console.error("Error fetching Customer LTV:", error);
