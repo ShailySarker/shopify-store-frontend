@@ -10,8 +10,8 @@ const Home = () => {
         <div className="py-4 lg:px-20 md:px-12 px-6 bg-slate-100">
             <h1 className="lg:text-3xl md:text-2xl text-xl font-semibold mb-4">Sales Dashboard</h1>
             <TotalSalesData />
-            {/* <SalesGrowthRateChart />
-            <NewCustomersChart />
+            <SalesGrowthRateChart />
+            {/* <NewCustomersChart />
             <RepeatCustomersChart />
             <CustomerGeographyChart />
             <CustomerLTVChart /> */}

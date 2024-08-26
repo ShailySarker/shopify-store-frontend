@@ -8,7 +8,7 @@ export const fetchTotalSales = async (interval) => {
         const response = await axios.get(`${API_BASE_URL}/sales/total-sales`, {
             params: { interval },
         });
-        console.log("response API_1:", response?.data);
+        // console.log("response API_1:", response?.data);
         return response?.data;
     } catch (error) {
         console.error("Error fetching total sales data:", error);
@@ -22,8 +22,8 @@ export const fetchSalesGrowthRate = async (interval) => {
         const response = await axios.get(`${API_BASE_URL}/sales/sales-growth-rate`, {
             params: { interval },
         });
-        // console.log("response API_2:", response?.data)
-        return response?.data;
+        console.log("response API_2:", response?.data?.data);
+        return response?.data?.data;
     } catch (error) {
         console.error("Error fetching sales grow rate:", error);
         return [];
